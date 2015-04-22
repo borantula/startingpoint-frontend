@@ -1,0 +1,88 @@
+///*------------------------------------*\
+//    #DEFAULTS
+//\*------------------------------------*/
+
+@import "core/defaults";
+
+
+
+///*------------------------------------*\
+//    #BOOTSTRAP Files Before Styles
+//\*------------------------------------*/
+//comment this line if bootstrap is not going to be used
+//if project doesn't need bootstrap at all, comment out bootstrap/loader line
+//You can also exclude any part of bootstrap by commenting out lines from loader
+@import "bootstrap/pre-files-loader";
+
+
+///*------------------------------------*\
+//    #Core
+//\*------------------------------------*/
+// Stuff like mixin fonts colors which is
+// not dependent on page styles
+@import "core/mixins";
+@import "core/fonts";
+@import "core/colors";
+
+
+
+///*------------------------------------*\
+//    #BOOTSTRAP
+//\*------------------------------------*/
+//comment this line if bootstrap is not going to be used
+//if project doesn't need bootstrap at all, comment out bootstrap/loader line
+//You can also exclude any part of bootstrap by commenting out lines from loader
+@import "bootstrap/loader";
+
+///*------------------------------------*\
+//    #BASE
+//\*------------------------------------*/
+// Base folder that includes colors, fonts, mixins, settings
+// Styles in the files like mixins, colors, fonts,settings etc do not have classes for direct use
+// Direct use starts with base.scss
+
+@import "base/base";
+@import "base/wordpress";
+
+
+
+
+///*------------------------------------*\
+//    #LAYOUTS
+//\*------------------------------------*/
+// Layout folder has main grid for project and other specific layout container classes
+// You should comment out the grid if you are using bootstrap grid(or some other grid)
+@import "layout/containers";
+
+
+///*------------------------------------*\
+//    #MODULES
+//\*------------------------------------*/
+@import "modules/header";
+@import "modules/footer";
+@import "modules/index";
+@import "modules/single";
+@import "modules/archive";
+
+
+
+
+///*------------------------------------*\
+//    #GLOBAL STATES
+//\*------------------------------------*/
+@import "core/states";
+
+
+///*------------------------------------*\
+//    #MISC
+//\*------------------------------------*/
+
+//Diagnose is for checking out empty elements, attr etc.
+//for more info: http://css-tricks.com/snippets/css/css-diagnostics/
+//@import "misc/diagnose";
+
+/* Shame
+// All your shameful additions on the css that you make in a hurry goes here.
+// This file is meant to be empty so each line on this file is a shame on you
+*/
+@import "shame";

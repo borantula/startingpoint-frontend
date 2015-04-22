@@ -1,0 +1,9 @@
+@mixin fontMain {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-weight: normal;
+}
+
+@mixin fontTitle{
+    font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+    font-weight: bold;
+}

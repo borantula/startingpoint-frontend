@@ -1,0 +1,64 @@
+// Create a fully formed type style (sizing and vertical rhythm) by passing in a
+// single value, e.g.:
+//
+// .foo {
+//     @include font-size(10px);
+// }
+// taken from inuit.css
+
+
+
+@mixin fontSize($font-size, $line-height: true) {
+    font-size: $font-size;
+    font-size: ($font-size / $base-font-size) * 1rem;
+
+    @if $line-height == true {
+        line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+    }
+
+}
+
+
+// Instead of keeping a seperate mobile stylesheet
+// its a better approach to define its behavior in
+// for different media queries
+// syntax can be read like: @include respondTo(smartphone)
+
+/*
+@mixin respondTo($size : smartphone) {
+    @if $size == smallest {
+        @media only screen and (max-width: $break-smallest) { @content; }
+    }
+    @if $size == small {
+        @media only screen and (max-width: $break-small) { @content; }
+    }
+    @if $size == smartphone {
+        @media only screen and (max-width: $break-small) { @content; }
+    }
+
+    @if $size == fromSmall {
+        @media only screen and (max-width: $break-large - 1) { @content; }
+    }
+    @if $size == fromMedium {
+        @media only screen and (max-width: $break-full - 1) { @content; }
+    }
+    @if $size == medium {
+        @media only screen and (min-width: $break-large + 1) and (max-width: $break-full - 1) {
+            @content;
+        }
+    }
+    @if $size == wide {
+        @media only screen and (min-width: $break-full + 1) { @content; }
+    }
+}
+
+*/
+
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}

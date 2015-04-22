@@ -1,0 +1,12 @@
+{
+    "name": "mapfreintranet",
+    "version": "0.0.1",
+    "dependencies": {
+        "normalize-css": "latest",
+        "bootstrap-sass-official": "latest",
+        "font-awesome": "latest",
+        "jquery": "latest",
+        "modernizr": "latest"
+    },
+    "private": true
+}
