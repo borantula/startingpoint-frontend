@@ -1,0 +1,29 @@
+{
+  "name": "by-fronend-starter",
+  "version": "1.0.0",
+  "description": "Starting point for frontend jobs by Bora Yalcin",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.10.0",
+    "gulp-minify": "0.0.5",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "borantula",
+  "license": "ISC"
+}
