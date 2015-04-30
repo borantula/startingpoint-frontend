@@ -1,3 +1,6 @@
+img {
+  max-width: 100%; }
+
 /*
 @mixin respondTo($size : smartphone) {
     @if $size == smallest {
@@ -3642,9 +3645,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-
-img {
-  max-width: 100%; }
 
 /* =WordPress Core
 -------------------------------------------------------------- */

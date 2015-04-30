@@ -41,8 +41,7 @@
 // Styles in the files like mixins, colors, fonts,settings etc do not have classes for direct use
 // Direct use starts with base.scss
 
-@import "./base/base";
-@import "base/wordpress";
+@import "core/wordpress";
 
 
 ///*------------------------------------*\
